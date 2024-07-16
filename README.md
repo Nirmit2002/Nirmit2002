@@ -284,6 +284,8 @@ Usage:
 Gives an overall count of visitor sessions, useful for measuring overall traffic and engagement levels.
 
 7. Average Session Time
+Purpose:
+This query calculates the average duration of user sessions on the website.
 
 SELECT AVG(lv.visit_total_time) AS average_visit_time_seconds
 FROM matomo.log_visit lv
@@ -291,11 +293,6 @@ JOIN matomo.site s ON lv.idsite = s.idsite
 WHERE s.name  = "$website"  
 AND lv.visit_last_action_time BETWEEN $__timeFrom() AND $__timeTo();
 
-Purpose:
-This query calculates the average duration of user sessions on the website.
-
-Usage:
-Helps in assessing user engagement and identifying trends in session length, crucial for optimizing content and user experience.
 
 8. Bounce Rate
 Purpose:
