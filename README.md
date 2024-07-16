@@ -130,6 +130,9 @@ AND lv.visit_last_action_time BETWEEN $__timeFrom() AND $__timeTo();
 
 
 8. Bounce Rate
+Purpose:
+This query calculates the bounce rate percentage, representing the proportion of single-page visits where the visitor left without interaction.
+
 ```bash
 
 SELECT
@@ -143,12 +146,12 @@ AND lv.visit_last_action_time BETWEEN $__timeFrom() AND $__timeTo();
  
 ```
 
-Purpose:
-This query calculates the bounce rate percentage, representing the proportion of single-page visits where the visitor left without interaction.
 
 
 
 9. Average User Actions per Session
+Purpose:
+This query calculates the average number of interactions (actions) performed by users during their sessions on the website.
 
 ```bash
 
@@ -160,8 +163,7 @@ AND lv.visit_last_action_time BETWEEN $__timeFrom() AND $__timeTo();
  
  
 ```
-Purpose:
-This query calculates the average number of interactions (actions) performed by users during their sessions on the website.
+
 
 
 
